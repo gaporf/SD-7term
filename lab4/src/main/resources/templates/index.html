@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+    <title>ToDo application</title>
+</head>
+<body>
+
+<table>
+    <th:block th:each="todolist :${todolists}">
+        <tr>
+            <td th:text="${todolist.getId()}"></td>
+        </tr>
+    </th:block>
+</table>
